@@ -1,0 +1,9 @@
+<launch>
+	<!-- Launch fastsim with the 2D map of the experiment -->
+  <node pkg="fastsim" type="simu_fastsim" name="simu_fastsim" output="screen">
+    <param name="settings" type="str" value="$(find tn1999_experiment)/envs/tn1999.xml"/>
+    <param name="path" type="str" value="$(find tn1999_experiment)/envs" />
+  </node>
+  <!-- Launch the wall following ros node -->
+  <node pkg="wall_follower" type="wall_follower.py" name="wall_follower" output="screen" />
+</launch>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<fastsim>
+  <display enable="true"/>
+
+  <!-- world -->
+  <map name="tn1999.pbm" size="600"/>
+  <robot x="131" y="280" theta="0" diameter="10"/>
+  <!-- illuminated_switch x="300" y="500" color="0" radius="10" on="true"/ -->
+  <goal x="300" y="300" color="0" diameter="10"/>
+  
+  <!-- sensors (optionals) -->
+  <laser range="100" angle="-151.22"/>
+  <laser range="100" angle="-90"/>
+  <laser range="100" angle="-45.79"/>
+  <laser range="100" angle="-17.14"/>
+  <laser range="100" angle="17.23"/>
+  <laser range="100" angle="45.88"/>
+  <laser range="100" angle="90"/>
+  <laser range="100" angle="151.49"/>
+  <!-- <laser_scanner angle_min="-135" angle_max="-4" angle_inc="45" range="3000"/> -->
+  <!-- <laser_scanner angle_min="-15" angle_max="15" angle_inc="30" range="3000"/> -->
+  <!-- <laser_scanner angle_min="45" angle_max="135" angle_inc="45" range="3000"/> -->
+
+</fastsim>
